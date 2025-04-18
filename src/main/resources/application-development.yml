@@ -1,0 +1,26 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /cycle
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cycle_time
+    username: hendraw
+    password: postgres
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: none
+        format_sql: true
+famous:
+  host: https://famous.borneo-indobara.com/
+  xapikey: 1679091c5a880faf6fb5e6087eb1b2dc
+authorization:
+  enabled: false
+file:
+  upload-dir: /Users/hendraw/file_upload
+host:
+  url: http://localhost:8085/

@@ -88,6 +88,8 @@ public class FamousExternal {
 		entity.setHaulingExitTime(data.getHaulingExitTime());
 		entity.setPortEnterTime(data.getPortEnterTime());
 		entity.setPortExitTime(data.getPortExitTime());
+		entity.setNoSk(data.getNoSk());
+		entity.setPayloadTon(data.getPayloadTon());
 		return entity;
 	}
 

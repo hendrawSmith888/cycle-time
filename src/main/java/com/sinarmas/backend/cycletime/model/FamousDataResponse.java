@@ -72,6 +72,11 @@ public class FamousDataResponse {
 		@JsonProperty("port_exit_time")
 		private String portExitTime;
 
+		@JsonProperty("no_sk")
+		private Integer noSk;
+		@JsonProperty("payload (TON)")
+		private String payloadTon;
+
 		public String getHullCode() {
 			return hullCode;
 		}
@@ -182,6 +187,22 @@ public class FamousDataResponse {
 
 		public void setPortExitTime(String portExitTime) {
 			this.portExitTime = portExitTime;
+		}
+
+		public Integer getNoSk() {
+			return noSk;
+		}
+
+		public void setNoSk(Integer noSk) {
+			this.noSk = noSk;
+		}
+
+		public String getPayloadTon() {
+			return payloadTon;
+		}
+
+		public void setPayloadTon(String payloadTon) {
+			this.payloadTon = payloadTon;
 		}
 	}
 }

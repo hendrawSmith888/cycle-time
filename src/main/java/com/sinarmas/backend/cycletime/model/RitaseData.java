@@ -28,6 +28,8 @@ public class RitaseData {
 	private String haulingExitTime;
 	private String portEnterTime;
 	private String portExitTime;
+	private Integer noSk;
+	private String payloadTon;
 
 	public Long getId() {
 		return id;
@@ -147,5 +149,21 @@ public class RitaseData {
 
 	public void setPortExitTime(String portExitTime) {
 		this.portExitTime = portExitTime;
+	}
+
+	public Integer getNoSk() {
+		return noSk;
+	}
+
+	public void setNoSk(Integer noSk) {
+		this.noSk = noSk;
+	}
+
+	public String getPayloadTon() {
+		return payloadTon;
+	}
+
+	public void setPayloadTon(String payloadTon) {
+		this.payloadTon = payloadTon;
 	}
 }

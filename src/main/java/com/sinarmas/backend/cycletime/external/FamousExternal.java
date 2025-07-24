@@ -43,6 +43,7 @@ public class FamousExternal {
 		body.put("hull_code", req.getHullCode());
 		body.put("start_date", req.getStartDate());
 		body.put("end_date", req.getEndDate());
+		body.put("event_type", req.getEventType());
 
 		ObjectMapper mapper = new ObjectMapper();
 		String json = mapper.writeValueAsString(body);

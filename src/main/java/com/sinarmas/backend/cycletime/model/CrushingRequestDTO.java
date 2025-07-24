@@ -9,21 +9,15 @@ import java.util.List;
 /**
  * @Author: hendraw
  * Description:
- * @Date: 09/04/25
+ * @Date: 19/07/25
  */
-public class FamousDataRequest {
-		private List<String> hullCode;
-		private String startDate;
-		private String endDate;
-		private Integer eventType;
 
-	public List<String> getHullCode() {
-		return hullCode;
-	}
-
-	public void setHullCode(List<String> hullCode) {
-		this.hullCode = hullCode;
-	}
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class CrushingRequestDTO {
+	private String startDate;
+	private String endDate;
 
 	public String getStartDate() {
 		return startDate;
@@ -39,13 +33,5 @@ public class FamousDataRequest {
 
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
-	}
-
-	public Integer getEventType() {
-		return eventType;
-	}
-
-	public void setEventType(Integer eventType) {
-		this.eventType = eventType;
 	}
 }
